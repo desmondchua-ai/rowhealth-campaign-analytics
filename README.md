@@ -84,7 +84,7 @@ Three things are worth knowing.
 <!-- IMAGE 05: full dashboard screenshot, all three bands, at readable width. -->
 ![Row Health Campaign Category Dashboard](images/05-dashboard-full.png)
 
-**[VIEW THE INTERACTIVE DASHBOARD ON TABLEAU PUBLIC](PASTE TABLEAU PUBLIC LINK HERE)**
+**[VIEW THE INTERACTIVE DASHBOARD ON TABLEAU PUBLIC]([PASTE TABLEAU PUBLIC LINK HERE](https://public.tableau.com/app/profile/desmond.chua1037/viz/RowHealthCampaignCategoryDashboard/CampaignCategoryDashboard))**
 
 Twelve worksheets across three subject bands following the customer journey: marketing, then signups, then claims. Tables on the left, visuals on the right, repeated in every band, so a reader who learns to read the first band can read the other two without being taught again.
 
