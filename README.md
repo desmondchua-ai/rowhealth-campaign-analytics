@@ -219,7 +219,7 @@ Written in the form *because [finding], we should [action]*, so the evidence tra
 
 4. **Compare Compare Health Coverage's premium income against its claim cost before growing it further.** It has grown from 6.7% to 26.1% of signups and from 6.5% to 37.6% of the claim book, and its customers claim $1,383.7 each against an $818 average.
 
-5. **Set 2024 targets against the 2019 baseline of 2,465 signups rather than the 2020 peak.** The March 2020 step appears across every category at once rather than in any single one, so the 2020 and 2021 signup levels should be treated as an external effect rather than a campaign result.
+5. **Set 2024 targets against the 2019 baseline of 2,465 signups rather than the 2020 peak.** The March 2020 step appears across every category at once rather than in any single one, so the 2020 and 2021 signup levels should be treated as an external effect due to Covid pandemic rather than a campaign result.
 
 6. **Confirm whether click tracking was working on Family Coverage Plan before treating it as a failure.** It spent $3,936 on 1,106,540 impressions with no clicks recorded at all, while every other campaign without clicks carries an explicit zero.
 
