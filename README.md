@@ -119,7 +119,7 @@ The rule this generalises to: a filter can only be trusted on a chart at the sam
 
 <!-- IMAGE 08: Marketing Metrics by Type, category split by campaign type. -->
 <p align="center">
-  <img src="images/08-marketing-metrics-by-type.png" alt="Marketing metrics split by campaign type" width="620">
+  <img src="images/08-marketing-metrics-by-type.png" alt="Marketing metrics split by campaign type" width="860">
 </p>
 
 - **Health For All's 25.48% CTR is one campaign type.** Health Awareness returned 36.87%; its other two types returned 0.00%.
@@ -145,8 +145,11 @@ The rule this generalises to: a filter can only be trusted on a chart at the sam
 
 <!-- IMAGES 10 and 11: overall shape on the left, category detail on the right. -->
 <p align="center">
-  <img src="images/10-signup-count-total.png" alt="Total monthly signups, 2019 to 2023" width="392">
-  <img src="images/11-signup-count-by-category.png" alt="Monthly signups by campaign category" width="392">
+  <img src="images/10-signup-count-total.png" alt="Total monthly signups, 2019 to 2023" width="620">
+</p>
+
+<p align="center">
+  <img src="images/11-signup-count-by-category.png" alt="Monthly signups by campaign category" width="620">
 </p>
 
 - **Signups averaged 205 a month through 2019, stepped up to 548 in March 2020 and peaked at 653 in April**, then declined. The six complete months of 2023 average 139.
@@ -155,7 +158,7 @@ The rule this generalises to: a filter can only be trusted on a chart at the sam
 
 <!-- IMAGE 12: Signup Mix by Year, stacked bars, percent of total. -->
 <p align="center">
-  <img src="images/12-signup-mix-by-year.png" alt="Signup mix by category and year, percent of total" width="560">
+  <img src="images/12-signup-mix-by-year.png" alt="Signup mix by category and year, percent of total" width="440">
 </p>
 
 - **In 2019 three categories were roughly level at around 27% of signups each**: Health For All, #CoverageMatters and #HealthyLiving. Compare Health Coverage was a minor category at 6.7%.
@@ -192,7 +195,7 @@ The rule this generalises to: a filter can only be trusted on a chart at the sam
 
 <!-- IMAGE 15: Claim Mix by Year, stacked bars, percent of total. -->
 <p align="center">
-  <img src="images/15-claim-mix-by-year.png" alt="Claim mix by category and year, percent of total" width="330">
+  <img src="images/15-claim-mix-by-year.png" alt="Claim mix by category and year, percent of total" width="400">
 </p>
 
 - **In 2019 three categories split the claim book roughly evenly**: Health For All 30.7%, #CoverageMatters 26.4% and #HealthyLiving 26.1%. Compare Health Coverage held 6.5%.
@@ -274,4 +277,5 @@ Written in the form *because [finding], we should [action]*, so the evidence tra
   <br>
   <em>Built by Desmond Chua. Analysis in Excel and Tableau Public.</em>
 </p>
+
 
