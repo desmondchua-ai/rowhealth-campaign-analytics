@@ -33,7 +33,7 @@ Insights and recommendations are provided across three areas:
 
 **Links**
 
-- Interactive Tableau dashboard: **[https://public.tableau.com/app/profile/desmond.chua1037/viz/RowHealthCampaignCategoryDashboard/CampaignCategoryDashboard]**
+- Interactive Tableau dashboard: **[Row Health Campaign Category Dashboard](https://public.tableau.com/app/profile/desmond.chua1037/viz/RowHealthCampaignCategoryDashboard/CampaignCategoryDashboard)**
 - Full documentation and analysis workbook: [`RowHealth_Documentation_and_Analysis.xlsx`](RowHealth_Documentation_and_Analysis.xlsx)
 
 The workbook holds everything behind the findings below, including the requirements decomposition, the data profiling record, the metric definitions and the dashboard build log, plus the three unmodified source tabs.
@@ -47,10 +47,9 @@ The workbook holds everything behind the findings below, including the requireme
 The dataset consists of three tables covering campaigns, customer signups and demographics, and the claims those customers went on to file. Total row count is 66,393 records across 57 campaigns, 16,338 customers and 49,998 claims, running from January 2019 to July 2023.
 
 <!-- IMAGE 02: the ERD showing campaigns to customers to claims. Use the diagram from the brief. -->
-![Row Health entity relationship diagram](images/02-erd-rowhealth.png)
-
-<!-- IMAGE 03: the column and data type listing for the three tables. -->
-![Row Health table schemas](images/03-table-schemas.png)
+<p align="center">
+  <img src="images/02-erd-rowhealth.png" alt="Row Health entity relationship diagram" width="560">
+</p>
 
 The three tables relate rather than join: `customers` is the only path between `campaigns` and `claims`. That matters, because it sets the grain rule that governs every metric in this project.
 
@@ -67,7 +66,9 @@ The full data dictionary, the eleven-item quality log with a decision and a rati
 Row Health spent **$60,190 across 57 campaigns** to acquire **16,338 customers**, who have since filed **49,998 claims worth $13,359,063**. Headline performance is a 9.39% click-through rate at $0.071 a click, and a 0.18% signup rate at $3.68 a signup.
 
 <!-- IMAGE 04: the callout row from the top of the dashboard, showing CTR, CPC, Signup Rate, Cost per Signup. -->
-![Dashboard callout row](images/04-callout-row.png)
+<p align="center">
+  <img src="images/04-callout-row.png" alt="Dashboard callout row" width="720">
+</p>
 
 Three things are worth knowing.
 
@@ -82,9 +83,11 @@ Three things are worth knowing.
 ## The Dashboard
 
 <!-- IMAGE 05: full dashboard screenshot, all three bands, at readable width. -->
-![Row Health Campaign Category Dashboard](images/05-dashboard-full.png)
+<p align="center">
+  <img src="images/05-dashboard-full.png" alt="Row Health Campaign Category Dashboard" width="840">
+</p>
 
-**[VIEW THE INTERACTIVE DASHBOARD ON TABLEAU PUBLIC](https://public.tableau.com/app/profile/desmond.chua1037/viz/RowHealthCampaignCategoryDashboard/CampaignCategoryDashboard)**
+**[View the interactive dashboard on Tableau Public](https://public.tableau.com/app/profile/desmond.chua1037/viz/RowHealthCampaignCategoryDashboard/CampaignCategoryDashboard)**
 
 Twelve worksheets across three subject bands following the customer journey: marketing, then signups, then claims. Tables on the left, visuals on the right, repeated in every band, so a reader who learns to read the first band can read the other two without being taught again.
 
@@ -99,19 +102,25 @@ The rule this generalises to: a filter can only be trusted on a chart at the sam
 *How much did we spend, what did it buy, and which categories performed?*
 
 <!-- IMAGE 06: Marketing Metrics table, impressions / CTR / CPC by category. -->
-![Marketing Metrics by campaign category](images/06-marketing-metrics-table.png)
+<p align="center">
+  <img src="images/06-marketing-metrics-table.png" alt="Marketing Metrics by campaign category" width="520">
+</p>
 
 - **Click-through rate averages 9.39% across $60,190 of spend, but ranges from 25.48% on Health For All to 1.41% on Golden Years Security.**
 - **The biggest campaigns are not the best ones.** Tailored Health Plans took the most impressions at 1,398,859 and returned 6.62%. Health For All took the fewest at 170,559 and returned 25.48%.
 - **Golden Years Security is the worst on both measures**, at 1.41% CTR and $0.680 per click against a $0.071 average.
 
 <!-- IMAGE 07: Marketing Bars, sorted, showing impressions / CTR / CPC together. -->
-![Marketing measures by category, sorted](images/07-marketing-bars.png)
+<p align="center">
+  <img src="images/07-marketing-bars.png" alt="Marketing measures by category, sorted" width="620">
+</p>
 
 - **Family Coverage Plan spent $3,936 on 1,106,540 impressions and recorded no clicks at all.** Every other campaign with no clicks carries an explicit zero, so this reads as a tracking failure rather than a measured result.
 
 <!-- IMAGE 08: Marketing Metrics by Type, category split by campaign type. -->
-![Marketing metrics split by campaign type](images/08-marketing-metrics-by-type.png)
+<p align="center">
+  <img src="images/08-marketing-metrics-by-type.png" alt="Marketing metrics split by campaign type" width="620">
+</p>
 
 - **Health For All's 25.48% CTR is one campaign type.** Health Awareness returned 36.87%; its other two types returned 0.00%.
 - **Benefit Updates splits the same way**: Policy Information 30.65%, Product Promotion 7.20%.
@@ -125,25 +134,29 @@ The rule this generalises to: a filter can only be trusted on a chart at the sam
 *How many customers did each category bring in, when, and at what cost?*
 
 <!-- IMAGE 09: Signup Metrics table, signup rate / cost per signup / signup count by category. -->
-![Signup Metrics by campaign category](images/09-signup-metrics-table.png)
+<p align="center">
+  <img src="images/09-signup-metrics-table.png" alt="Signup Metrics by campaign category" width="470">
+</p>
 
 - **Row Health acquired 16,338 signups at a 0.18% signup rate and $3.68 per signup.**
 - **Four categories produced 83% of all signups**: #HealthyLiving 3,727, Health For All 3,545, #CoverageMatters 3,536 and Compare Health Coverage 2,820.
 - **Health For All converts far better than anything else**, at 2.08% against the 0.18% average, and costs $1.2 per signup.
 - **Golden Years Security produced 23 signups at $176.7 each**, against $0.7 for #CoverageMatters.
 
-<!-- IMAGE 10: Signup Count Total, single grey line, month grain. Establishes the shape before colour. -->
-![Total monthly signups, 2019 to 2023](images/10-signup-count-total.png)
-
-<!-- IMAGE 11: Signup Count by Category, coloured monthly line. -->
-![Monthly signups by campaign category](images/11-signup-count-by-category.png)
+<!-- IMAGES 10 and 11: overall shape on the left, category detail on the right. -->
+<p align="center">
+  <img src="images/10-signup-count-total.png" alt="Total monthly signups, 2019 to 2023" width="392">
+  <img src="images/11-signup-count-by-category.png" alt="Monthly signups by campaign category" width="392">
+</p>
 
 - **Signups averaged 205 a month through 2019, stepped up to 548 in March 2020 and peaked at 653 in April**, then declined. The six complete months of 2023 average 139.
 - **The March 2020 step appears in every major category at once rather than in one**, so it is unlikely to be campaign-driven. The timing matches the start of the Covid pandemic, though nothing in this data confirms the cause.
 - **Annual signups peaked at 5,154 in 2020 and fell to 2,923 in 2022, a 43% drop.**
 
 <!-- IMAGE 12: Signup Mix by Year, stacked bars, percent of total. -->
-![Signup mix by category and year, percent of total](images/12-signup-mix-by-year.png)
+<p align="center">
+  <img src="images/12-signup-mix-by-year.png" alt="Signup mix by category and year, percent of total" width="560">
+</p>
 
 - **In 2019 three categories were roughly level at around 27% of signups each**: Health For All, #CoverageMatters and #HealthyLiving. Compare Health Coverage was a minor category at 6.7%.
 - **By 2022 Compare Health Coverage was the largest at 26.1%**, growing from 165 signups to 762.
@@ -159,7 +172,9 @@ The rule this generalises to: a filter can only be trusted on a chart at the sam
 *What did customers from each category go on to claim?*
 
 <!-- IMAGE 13: Claim Metrics table, claim amount / average claim / claim count by category. -->
-![Claim Metrics by campaign category](images/13-claim-metrics-table.png)
+<p align="center">
+  <img src="images/13-claim-metrics-table.png" alt="Claim Metrics by campaign category" width="470">
+</p>
 
 - **Customers filed 49,998 claims worth $13,359,063, averaging $267.2 a claim.**
 - **Compare Health Coverage claims the most at $3,902,045, but it does not file the most claims.** Health For All files 12,232 against its 9,507 and claims $1.1m less.
@@ -167,14 +182,18 @@ The rule this generalises to: a filter can only be trusted on a chart at the sam
 - **Golden Years Security produced 75 claims worth $16,088**, the smallest book of any category.
 
 <!-- IMAGE 14: Claim Amount by Category, monthly line. -->
-![Monthly claim amount by campaign category](images/14-claim-amount-by-category.png)
+<p align="center">
+  <img src="images/14-claim-amount-by-category.png" alt="Monthly claim amount by campaign category" width="660">
+</p>
 
 - **Claims grew from $710,923 in 2019 to $4,428,738 in 2022, a sixfold rise.** Monthly claim amount peaked at $424,619 in May 2022.
 - **Signups peaked in April 2020 and claims peaked two years later.** Customers keep filing after they join, so claim volume follows the size of the customer base rather than current campaign performance.
 - **Compare Health Coverage drove the rise.** Its monthly claim amount went from near zero in 2019 to roughly $173,000 at its 2022 peak.
 
 <!-- IMAGE 15: Claim Mix by Year, stacked bars, percent of total. -->
-![Claim mix by category and year, percent of total](images/15-claim-mix-by-year.png)
+<p align="center">
+  <img src="images/15-claim-mix-by-year.png" alt="Claim mix by category and year, percent of total" width="330">
+</p>
 
 - **In 2019 three categories split the claim book roughly evenly**: Health For All 30.7%, #CoverageMatters 26.4% and #HealthyLiving 26.1%. Compare Health Coverage held 6.5%.
 - **By 2022 Compare Health Coverage held 37.6%, more than double the next largest.** It rose from $46,407 to $1,667,120 in claim amount.
@@ -255,3 +274,4 @@ Written in the form *because [finding], we should [action]*, so the evidence tra
   <br>
   <em>Built by Desmond Chua. Analysis in Excel and Tableau Public.</em>
 </p>
+
