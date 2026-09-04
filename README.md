@@ -254,7 +254,7 @@ Written in the form *because [finding], we should [action]*, so the evidence tra
 | File | What it holds |
 |---|---|
 | `README.md` | This document |
-| `RowHealth_Documentation_and_Analysis.xlsx` | The full workbook, eleven tabs |
+| `RowHealth_Documentation_and_Analysis.xlsx` | The full workbook |
 | `images/` | Dashboard screenshots and figures used above |
 
 **Inside the workbook**
