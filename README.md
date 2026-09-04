@@ -145,11 +145,11 @@ The rule this generalises to: a filter can only be trusted on a chart at the sam
 
 <!-- IMAGES 10 and 11: overall shape on the left, category detail on the right. -->
 <p align="center">
-  <img src="images/10-signup-count-total.png" alt="Total monthly signups, 2019 to 2023" width="620">
+  <img src="images/10-signup-count-total.png" alt="Total monthly signups, 2019 to 2023" width="860">
 </p>
 
 <p align="center">
-  <img src="images/11-signup-count-by-category.png" alt="Monthly signups by campaign category" width="620">
+  <img src="images/11-signup-count-by-category.png" alt="Monthly signups by campaign category" width="860">
 </p>
 
 - **Signups averaged 205 a month through 2019, stepped up to 548 in March 2020 and peaked at 653 in April**, then declined. The six complete months of 2023 average 139.
@@ -186,7 +186,7 @@ The rule this generalises to: a filter can only be trusted on a chart at the sam
 
 <!-- IMAGE 14: Claim Amount by Category, monthly line. -->
 <p align="center">
-  <img src="images/14-claim-amount-by-category.png" alt="Monthly claim amount by campaign category" width="660">
+  <img src="images/14-claim-amount-by-category.png" alt="Monthly claim amount by campaign category" width="860">
 </p>
 
 - **Claims grew from $710,923 in 2019 to $4,428,738 in 2022, a sixfold rise.** Monthly claim amount peaked at $424,619 in May 2022.
@@ -277,5 +277,4 @@ Written in the form *because [finding], we should [action]*, so the evidence tra
   <br>
   <em>Built by Desmond Chua. Analysis in Excel and Tableau Public.</em>
 </p>
-
 
